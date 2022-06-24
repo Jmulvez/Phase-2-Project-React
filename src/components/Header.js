@@ -3,7 +3,9 @@ import React from 'react';
 function Header() {
     return (
         <div>
-            React Project
+            <h1>
+                React Blogger
+            </h1>
         </div>
     )
 }
