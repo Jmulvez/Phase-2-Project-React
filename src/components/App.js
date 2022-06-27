@@ -1,12 +1,16 @@
 import React from 'react';
-import Header from './Header';
-import Blog from './Blog'
+import { Route, Switch } from 'react-router-dom';
+import Home from './Home';
+import Blog from './Blog';
+import About from './About';
 
 function App() {
     return (
         <div>
-            <Header />
-            <Blog />
+            <Navbar />
+            <Switch>
+                <Route path="Blog"></Route>
+            </Switch>
         </div>
     )
 }
