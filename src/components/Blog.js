@@ -4,7 +4,7 @@ import BlogPost from './BlogPost'
 function Blog() {
     return (
         <div>
-            <BlogPost />
+            
         </div>
     )
 }

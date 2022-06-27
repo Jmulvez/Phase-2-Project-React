@@ -4,7 +4,7 @@ function Home() {
     return (
         <div>
             <h1>
-                React Blogger
+                Welcome to Re-Blogger!
             </h1>
         </div>
     )
