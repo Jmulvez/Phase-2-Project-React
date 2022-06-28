@@ -4,7 +4,7 @@ import Blog from './Blog'
 function MainContainer() {
     const [blogs, setBlogs] = useState([]);
     useEffect(() => {
-        fetch("http://localhost:3000/blogs")
+        fetch("http://localhost:3001")
         .then(res => res.json())
         .then(data => setBlogs(data))
     }, []);
