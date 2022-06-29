@@ -16,10 +16,10 @@ function Navbar() {
             <NavLink to="/" style={linkStyle}>
                 Home
             </NavLink>
-            <NavLink to="/About" style={linkStyle}>
+            <NavLink to="/about" style={linkStyle}>
                 About
             </NavLink>
-            <NavLink to="/Blog" style={linkStyle}>
+            <NavLink to="/blogs" style={linkStyle}>
                 Blogs
             </NavLink>
         </div>
