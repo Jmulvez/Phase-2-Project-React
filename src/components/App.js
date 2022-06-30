@@ -18,6 +18,9 @@ function App() {
         .then(res => res.json())
         .then(data => setBlogs(data))
     }, []);
+    function handleNewBlog(newBlog) {
+        setBlogs([...blogs, newBlog]);
+    }
     return (
         <div style={appStyle} >
             <Navbar />
@@ -26,7 +29,7 @@ function App() {
                     <About />
                 </Route>
                 <Route path="/blogs">
-                    <NewBlog blogs={blogs} />
+                    <NewBlog onAddItem={handleNewBlog} />
                     <Blog blogs={blogs} />
                 </Route>
                 <Route exact path="/">

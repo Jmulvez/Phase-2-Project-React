@@ -1,15 +1,29 @@
 import React, { useState } from "react";
 
-function NewBlog() {
-    const [blog, newBlog] = useState("");
+function NewBlog({ onAddItem }) {
+    const [title, setTitle] = useState("");
+    const [image, setImage] = useState("");
+    const [text, setText] = useState("");
+
+    function handleNewTitle(event) {
+        setTitle(event.target.value);
+    }
+
+    function handleNewImage(event) {
+        setImage(event.target.value);
+    }
+
+    function handleNewText(event) {
+        setText(event.target.value);
+    }
 
     function handleSubmit(e) {
         e.preventDefault();
         const blogData = {
-            /*title: title,
+            title: title,
             image: image,
-            text: text,*/
-        }
+            text: text,
+        };
         fetch("http://localhost:3000/blogs", {
             method: "POST",
             headers: {
@@ -18,14 +32,29 @@ function NewBlog() {
             body: JSON.stringify(blogData)
         })
         .then(res => res.json())
-        .then()
+        .then((newBlog) => onAddItem(newBlog))
     }
     return (
-        <form className="NewBlog">
+        <form className="NewBlog" onSubmit={handleSubmit} >
             Add New Post!       
-            <input></input>
-            <input></input>
-            <input></input>
+            <input
+            label="title"
+            placeholder="Title"
+            onChange={handleNewTitle}
+            value={title}
+            />
+            <input 
+            label="image"
+            placeholder="Image URL"
+            onChange={handleNewImage}
+            value={image}
+            />
+            <input 
+            label="text"
+            placeholder="Your description here"
+            onChange={handleNewText}
+            value={text}
+            />
         </form>
     )
 }
