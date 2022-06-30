@@ -35,8 +35,8 @@ function NewBlog({ onAddItem }) {
         .then((newBlog) => onAddItem(newBlog))
     }
     return (
-        <form className="NewBlog" onSubmit={handleSubmit} >
-            Add New Post!       
+        <form className="NewBlog">
+            Add New Post:       
             <input
             label="title"
             placeholder="Title"
@@ -55,6 +55,7 @@ function NewBlog({ onAddItem }) {
             onChange={handleNewText}
             value={text}
             />
+            <button onSubmit={handleSubmit}>Submit</button>
         </form>
     )
 }

@@ -8,7 +8,8 @@ function Blog({ blogs }) {
                    <BlogPost title={blog.title}
                    image={blog.image}
                    text={blog.text}
-                   likes={blog.likes}/>
+                   likes={blog.likes}
+                   />
                </div>
     })
     return (
