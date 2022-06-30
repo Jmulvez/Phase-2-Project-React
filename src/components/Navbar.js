@@ -9,18 +9,18 @@ function Navbar() {
         margin: "10px 10px 3px",
         background: "blue",
         textDecoration: "none",
-        color: "yellow",
+        color: "yellow"
       };
     return (
         <div>
             <NavLink to="/" style={linkStyle}>
                 Home
             </NavLink>
-            <NavLink to="/about" style={linkStyle}>
-                About
-            </NavLink>
             <NavLink to="/blogs" style={linkStyle}>
                 Blogs
+            </NavLink>
+            <NavLink to="/about" style={linkStyle}>
+                About
             </NavLink>
         </div>
     )
