@@ -14,10 +14,11 @@ function App() {
         padding: "10px"
       };
     useEffect(() => {
-        fetch("http://localhost:3000/blogs")
+        fetch("http://localhost:3001/blogs")
         .then(res => res.json())
         .then(data => setBlogs(data))
     }, []);
+    
     function handleNewBlog(newBlog) {
         setBlogs([...blogs, newBlog]);
     }

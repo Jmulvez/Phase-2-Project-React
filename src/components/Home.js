@@ -11,6 +11,7 @@ function Home() {
                 Welcome to Re-Blogger!
             </h1>
             <div>
+                Log in or Create Account
                 <form>
                     <input placeholder="Username">
                     </input>

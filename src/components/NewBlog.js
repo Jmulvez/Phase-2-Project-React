@@ -24,10 +24,11 @@ function NewBlog({ onAddItem }) {
             image: image,
             text: text,
         };
-        fetch("http://localhost:3000/blogs", {
+        fetch("http://localhost:3001/blogs", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
+                'Accept': 'application/json',
             },
             body: JSON.stringify(blogData)
         })
@@ -35,8 +36,8 @@ function NewBlog({ onAddItem }) {
         .then((newBlog) => onAddItem(newBlog))
     }
     return (
-        <form className="NewBlog">
-            Add New Post:       
+        <form className="NewBlog" onSubmit={handleSubmit}>
+            Add New Post:
             <input
             label="title"
             placeholder="Title"
@@ -55,7 +56,7 @@ function NewBlog({ onAddItem }) {
             onChange={handleNewText}
             value={text}
             />
-            <button onSubmit={handleSubmit}>Submit</button>
+            <button>Submit</button>
         </form>
     )
 }
