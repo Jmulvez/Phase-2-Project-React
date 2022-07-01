@@ -22,18 +22,18 @@ function NewBlog({ onAddItem }) {
         const blogData = {
             title: title,
             image: image,
-            text: text,
+            text: text
         };
+        console.log(blogData)
         fetch("http://localhost:3001/blogs", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
-                'Accept': 'application/json',
             },
             body: JSON.stringify(blogData)
         })
         .then(res => res.json())
-        .then((newBlog) => onAddItem(newBlog))
+        .then(newBlog => onAddItem(newBlog))
     }
     return (
         <form className="NewBlog" onSubmit={handleSubmit}>
