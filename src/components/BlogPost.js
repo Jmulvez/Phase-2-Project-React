@@ -11,8 +11,8 @@ function BlogPost({ title, image, text }) {
             <h1>{title}</h1>
             <img src={image} alt="Image Not Found" style={pictureStyle}/>
             <p>{text}</p>
-            <button omnClick={() => setLiked((prevState) => !prevState)}>
-                {liked ? "♥️" : "🤍"}
+            <button onClick={() => setLiked((prevState) => !prevState)}>
+                {liked ? "❤️" : "🤍"}
             </button>
         </div>
     )

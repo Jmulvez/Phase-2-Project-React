@@ -7,9 +7,9 @@ function Blog({ blogs }) {
     const getAllPosts = blogs.map((blog) => {
         return <div>
                    <BlogPost title={blog.title}
-                   image={blog.image}
-                   text={blog.text}
-                   />
+                             image={blog.image}
+                             text={blog.text}
+                            />
                </div>
     })
     return (

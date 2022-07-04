@@ -14,9 +14,11 @@ function Home() {
             </h1>
             <div>
                 <form>
-                    <input placeholder="Username">
+                    <input 
+                    placeholder="Username">
                     </input>
-                    <input placeholder="Password">
+                    <input 
+                    placeholder="Password">
                     </input>
                     <button onClick={() => {history.push('/blogs')}}>Login</button>
                 </form>

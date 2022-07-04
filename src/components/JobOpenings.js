@@ -4,7 +4,7 @@ function JobOpenings({ title, description, salary }) {
     return (
         <div>
             <h1>{title}</h1>
-            <p>{description}</p>
+            <h2>{description}</h2>
             <p>{salary}</p>
         </div>
     )

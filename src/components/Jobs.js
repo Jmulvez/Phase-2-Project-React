@@ -8,10 +8,10 @@ function Jobs({ jobs }) {
         return (
             <div>
                 <JobOpenings key={job.id}
-                title={job.title}
-                description={job.description}
-                salary={job.salary}
-                />
+                             title={job.title}
+                             description={job.description}
+                             salary={job.salary}
+                             />
                 <button onClick={() => {history.push('/about')}}>
                 Apply Now!
                 </button>
