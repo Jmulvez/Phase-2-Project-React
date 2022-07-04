@@ -7,7 +7,8 @@ function Jobs({ jobs }) {
     const getAllJobs = jobs.map((job) => {
         return (
             <div>
-                <JobOpenings title={job.title}
+                <JobOpenings key={job.id}
+                title={job.title}
                 description={job.description}
                 salary={job.salary}
                 />

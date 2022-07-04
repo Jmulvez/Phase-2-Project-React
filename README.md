@@ -17,7 +17,7 @@ Use commands "npm install" to install dependencies, "npm run server" for the bac
 
 ## Future Updates
 
-Plans to add comments and other reactions to posts. Integrate a login feature for users.
+Plans to add comments and other reactions to posts. Integrate a login authentication feature for users.
 
 ## Author
 
