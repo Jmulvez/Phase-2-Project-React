@@ -2,7 +2,6 @@ import React from "react";
 import BlogPost from './BlogPost'
 
 function Blog({ blogs }) {
-    console.log(blogs)
     const getAllPosts = blogs.map((blog) => {
         return <div>
                    <BlogPost title={blog.title}

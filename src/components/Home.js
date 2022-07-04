@@ -19,7 +19,7 @@ function Home() {
                     </input>
                     <button>Login</button>
                 </form>
-                <img src="https://logos-world.net/wp-content/uploads/2021/08/Blogger-Logo-1999-2001.png" style={homeStyle}/>
+                <img src="https://logos-world.net/wp-content/uploads/2021/08/Blogger-Logo-1999-2001.png" alt="Oh no!" style={homeStyle}/>
             </div>
         </div>
     )
