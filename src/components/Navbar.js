@@ -19,6 +19,9 @@ function Navbar() {
             <NavLink to="/blogs" style={linkStyle}>
                 Blogs
             </NavLink>
+            <NavLink to="/jobs" style={linkStyle}>
+                Jobs
+            </NavLink>
             <NavLink to="/about" style={linkStyle}>
                 About
             </NavLink>

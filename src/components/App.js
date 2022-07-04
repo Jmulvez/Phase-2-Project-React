@@ -5,9 +5,11 @@ import About from './About';
 import Navbar from './Navbar'
 import Blog from './Blog';
 import NewBlog from "./NewBlog";
+import Jobs from './Jobs';
 
 function App() {
     const [blogs, setBlogs] = useState([]);
+    const [jobs, setJobs] = useState([]);
     const appStyle = {
         textDecoration: "none",
         color: "blue",
@@ -17,6 +19,12 @@ function App() {
         fetch("http://localhost:3001/blogs")
         .then(res => res.json())
         .then(data => setBlogs(data))
+    }, []);
+
+    useEffect(() => {
+        fetch("http://localhost:3001/jobs")
+        .then(res => res.json())
+        .then(data => setJobs(data))
     }, []);
     
     function handleNewBlog(newBlog) {
@@ -32,6 +40,9 @@ function App() {
                 <Route path="/blogs">
                     <NewBlog onAddItem={handleNewBlog} />
                     <Blog blogs={blogs} />
+                </Route>
+                <Route path="/jobs">
+                    <Jobs jobs={jobs} />
                 </Route>
                 <Route exact path="/">
                     <Home />

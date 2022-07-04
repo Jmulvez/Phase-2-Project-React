@@ -34,5 +34,31 @@
       "text": "beeeeeeeeesssssssss",
       "id": 4
     }
+  ],
+  "jobs": [
+    {
+      "id": 0,
+      "title": "Marketing Manager",
+      "description": "Design and come up with new marketing strategies to better reach our target audience.",
+      "salary": "$85,000"
+    },
+    {
+      "id": 1,
+      "title": "Graphic Designer",
+      "description": "Create user friendly interfaces and easy to use and naviate designs.",
+      "salary": "$90,000"
+    },
+    {
+      "id": 2,
+      "title": "Human Resources Manager",
+      "description": "Hiring human resources manager to better help facilitate a better working environment for all.",
+      "salary": "$75,000"
+    },
+    {
+      "id": 3,
+      "title": "Assistant Social Media Manager",
+      "description": "Help with using company resources in an effective and efficient manner.",
+      "salary": "$80,000"
+    }
   ]
 }

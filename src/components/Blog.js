@@ -1,7 +1,9 @@
 import React from "react";
 import BlogPost from './BlogPost'
+import { useHistory } from 'react-router-dom';
 
 function Blog({ blogs }) {
+    let history = useHistory();
     const getAllPosts = blogs.map((blog) => {
         return <div>
                    <BlogPost title={blog.title}
@@ -13,6 +15,9 @@ function Blog({ blogs }) {
     })
     return (
         <div>
+            <button onClick={() => {history.push('/')}}>
+                Logout
+            </button>
           {getAllPosts}
         </div>
     )
