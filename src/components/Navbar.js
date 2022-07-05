@@ -11,6 +11,7 @@ function Navbar() {
         textDecoration: "none",
         color: "yellow"
       };
+      
     return (
         <div>
             <NavLink to="/" style={linkStyle}>

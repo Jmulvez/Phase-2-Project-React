@@ -10,6 +10,7 @@ function Jobs({ jobs }) {
         backgroundColor: "blue",
         height: "22px"
       };
+
     const getAllJobs = jobs.map((job) => {
         return (
             <div>
@@ -24,6 +25,7 @@ function Jobs({ jobs }) {
             </div>
         )
     })
+    
     return (
         <div>
             <button onClick={() => {history.push('/')}} style={buttonStyle}>

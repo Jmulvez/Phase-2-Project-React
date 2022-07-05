@@ -42,6 +42,7 @@ function NewBlog({ onAddItem }) {
         .then(res => res.json())
         .then(newBlog => onAddItem(newBlog))
     }
+    
     return (
         <form className="NewBlog" onSubmit={handleSubmit}>
             Add New Post:

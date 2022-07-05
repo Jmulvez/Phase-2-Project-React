@@ -9,6 +9,7 @@ function About() {
         backgroundColor: "blue",
         height: "22px"
       };
+    
     return (
         <div>
             <h1>About Us</h1>

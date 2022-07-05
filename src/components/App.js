@@ -15,6 +15,7 @@ function App() {
         color: "blue",
         padding: "15px"
       };
+
     useEffect(() => {
         fetch("http://localhost:3001/blogs")
         .then(res => res.json())
@@ -30,6 +31,7 @@ function App() {
     function handleNewBlog(newBlog) {
         setBlogs([...blogs, newBlog]);
     }
+    
     return (
         <div style={appStyle} >
             <Navbar />

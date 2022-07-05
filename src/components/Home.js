@@ -7,12 +7,14 @@ function Home() {
         height:"500px",
         width:"500px"
       };
+
       const buttonStyle = {
         textDecoration: "none",
         color: "yellow",
         backgroundColor: "blue",
         height: "22px"
       };
+      
     return (
         <div>
             <h1>

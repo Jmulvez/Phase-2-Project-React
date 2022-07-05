@@ -6,12 +6,14 @@ function BlogPost({ title, image, text }) {
         width:"450px",
         height:"250px"
     };
+
     const buttonStyle = {
         textDecoration: "none",
         color: "yellow",
         backgroundColor: "cyan",
         height: "22px"
       };
+      
     return (
         <div>
             <h1>{title}</h1>

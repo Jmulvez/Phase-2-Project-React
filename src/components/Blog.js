@@ -10,6 +10,7 @@ function Blog({ blogs }) {
         backgroundColor: "blue",
         height: "22px"
       };
+
     const getAllPosts = blogs.map((blog) => {
         return <div>
                    <BlogPost title={blog.title}
@@ -18,6 +19,7 @@ function Blog({ blogs }) {
                             />
                </div>
     })
+    
     return (
         <div>
             <button onClick={() => {history.push('/')}} style={buttonStyle}>
