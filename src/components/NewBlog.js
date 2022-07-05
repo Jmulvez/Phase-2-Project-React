@@ -15,12 +15,15 @@ function NewBlog({ onAddItem }) {
     function handleNewTitle(event) {
         setTitle(event.target.value);
     }
+
     function handleNewImage(event) {
         setImage(event.target.value);
     }
+
     function handleNewText(event) {
         setText(event.target.value);
     }
+
     function handleSubmit(e) {
         e.preventDefault();
         const blogData = {
@@ -28,7 +31,7 @@ function NewBlog({ onAddItem }) {
             image: image,
             text: text
         };
-        console.log(blogData)
+
         fetch("http://localhost:3001/blogs", {
             method: "POST",
             headers: {

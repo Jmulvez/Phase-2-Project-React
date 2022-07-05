@@ -15,7 +15,7 @@ function BlogPost({ title, image, text }) {
     return (
         <div>
             <h1>{title}</h1>
-            <img src={image} alt="Image Not Found" style={pictureStyle}/>
+            <img src={image} alt="" style={pictureStyle}/>
             <p>{text}</p>
             <button onClick={() => setLiked((prevState) => !prevState)} style={buttonStyle}>
                 {liked ? "❤️" : "🤍"}
