@@ -1,5 +1,7 @@
 .html {
-    display: flex;
+    display: inline;
     background-color: gold;
-    padding: 20px;
+    padding: 10px;
+    border: 5px solid blue;
+    font-family: cursive;
 }

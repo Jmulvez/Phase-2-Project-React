@@ -7,6 +7,12 @@ function Home() {
         height:"500px",
         width:"500px"
       };
+      const buttonStyle = {
+        textDecoration: "none",
+        color: "yellow",
+        backgroundColor: "blue",
+        height: "22px"
+      };
     return (
         <div>
             <h1>
@@ -20,7 +26,7 @@ function Home() {
                     <input 
                     placeholder="Password">
                     </input>
-                    <button onClick={() => {history.push('/blogs')}}>Login</button>
+                    <button onClick={() => {history.push('/blogs')}} style={buttonStyle}>Login</button>
                 </form>
                 <img src="https://logos-world.net/wp-content/uploads/2021/08/Blogger-Logo-1999-2001.png" alt="Oh no!" style={homeStyle}/>
             </div>

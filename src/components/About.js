@@ -3,12 +3,18 @@ import { useHistory } from 'react-router-dom';
 
 function About() {
     let history = useHistory();
+    const aboutStyle = {
+        textDecoration: "none",
+        color: "yellow",
+        backgroundColor: "blue",
+        height: "22px"
+      };
     return (
         <div>
             <h1>About Us</h1>
             <h3>
                 Re-Blogger is an open source blog that allows its users to post and interact with ideas from other users. We have 
-                a goal to connect as many different people from as many backgrounds from all over the world in one giant meltiing 
+                a goal to connect as many different people from as many backgrounds from all over the world in one giant melting 
                 pot of ideas and discourse.
             </h3>
             <h1>Contact Us</h1>
@@ -33,7 +39,7 @@ function About() {
                 label="position"
                 placeholder="Position"
                 />
-                <button onClick={() => {history.push('/jobs')}}>Submit</button>
+                <button onClick={() => {history.push('/jobs')}} style={aboutStyle}>Submit</button>
             </form>
         </div>
     )

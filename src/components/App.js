@@ -13,7 +13,7 @@ function App() {
     const appStyle = {
         textDecoration: "none",
         color: "blue",
-        padding: "10px"
+        padding: "15px"
       };
     useEffect(() => {
         fetch("http://localhost:3001/blogs")
