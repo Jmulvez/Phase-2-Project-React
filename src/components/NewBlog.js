@@ -5,6 +5,13 @@ function NewBlog({ onAddItem }) {
     const [image, setImage] = useState("");
     const [text, setText] = useState("");
 
+    const buttonStyle = {
+        textDecoration: "none",
+        color: "yellow",
+        backgroundColor: "blue",
+        height: "22px"
+      };
+
     function handleNewTitle(event) {
         setTitle(event.target.value);
     }
@@ -53,7 +60,7 @@ function NewBlog({ onAddItem }) {
             onChange={handleNewText}
             value={text}
             />
-            <button>Submit</button>
+            <button style={buttonStyle}>Submit</button>
         </form>
     )
 }

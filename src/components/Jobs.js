@@ -4,6 +4,12 @@ import { useHistory } from 'react-router-dom';
 
 function Jobs({ jobs }) {
     let history = useHistory();
+    const buttonStyle = {
+        textDecoration: "none",
+        color: "yellow",
+        backgroundColor: "blue",
+        height: "22px"
+      };
     const getAllJobs = jobs.map((job) => {
         return (
             <div>
@@ -12,7 +18,7 @@ function Jobs({ jobs }) {
                              description={job.description}
                              salary={job.salary}
                              />
-                <button onClick={() => {history.push('/about')}}>
+                <button onClick={() => {history.push('/about')}} style={buttonStyle}>
                 Apply Now!
                 </button>
             </div>
@@ -20,7 +26,7 @@ function Jobs({ jobs }) {
     })
     return (
         <div>
-            <button onClick={() => {history.push('/')}}>
+            <button onClick={() => {history.push('/')}} style={buttonStyle}>
                 Logout
             </button>
             {getAllJobs}
